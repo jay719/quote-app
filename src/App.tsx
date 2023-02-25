@@ -1,17 +1,13 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./styles/App.css";
+import Header from "./helperFunctions/renderComponents/Header";
+import MainScreen from "./helperFunctions/renderComponents/MainScreen";
 
 function App() {
   return (
     <div className="home">
-      <header className="home-header">
-      <button> Hi </button>
-      </header>
-      <div className="main-screen">
-        <div>
-          <h1>Hey</h1>
-        </div>
-      </div>
+      <Header />
+      <MainScreen />
     </div>
   );
 }
