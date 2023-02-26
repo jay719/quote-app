@@ -10,7 +10,7 @@ Instructions:
 Done:
 - Start basic app
 - Make super simple ui to seperate out header vs main screen
-- Seperate out Css styling
+- Seperate out Css styling files
 - Make cards for fake quote data before using real api calls. 
 - Make header a simple search bar and icon that functions. 
 
