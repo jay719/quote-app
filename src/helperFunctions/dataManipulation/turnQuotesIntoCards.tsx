@@ -1,13 +1,15 @@
 import { AiOutlineHeart } from "react-icons/ai";
 import { QuoteObject } from "../../Types";
 import "../../styles/HelperFunctions.css";
+import React from "react";
 
-export const returnQuoteCards = (quotes: any) => {
+export const turnQuotesIntoCards = (quotes: any) => {
+  let i = 0;
   //good reminder, .forEach will only iterate through the array but map returns a new one we can render
   const quoteCards: React.ReactNode = quotes.map((quoteObject: QuoteObject) => {
     const author = quoteObject.author;
     const body = quoteObject.body;
-    console.log(author, "author");
+    // console.log(author, "author");
     return (
       <div className={"card"}>
         <div className="quote-info">
@@ -21,6 +23,6 @@ export const returnQuoteCards = (quotes: any) => {
       </div>
     );
   });
-  // use fragment instead of div to avoid unnecessary dom element
-  return <>{quoteCards}</>;
+  // use fragment instead of div to avoid unnecessary dom element, need key so using old syntax
+  return <React.Fragment key={i++}> {quoteCards} </React.Fragment>;
 };

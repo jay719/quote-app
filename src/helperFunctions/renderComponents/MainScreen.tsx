@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import "../../styles/MainScreen.css";
-import { returnQuoteCards } from "../dataManipulation/turnQuotesIntoCards";
+import { turnQuotesIntoCards } from "../dataManipulation/turnQuotesIntoCards";
 export default function MainScreen() {
   const search = "search";
 
@@ -12,13 +12,20 @@ export default function MainScreen() {
       { author: "Goat Man", body: "I am the goat" },
       { author: "Goat Man", body: "I am the goat" },
       { author: "Goat Man", body: "I am the goat" },
+      { author: "Goat Man", body: "I am the goat" },
+      { author: "Goat Man", body: "I am the goat" },
+      { author: "Goat Man", body: "I am the goat" },
+      { author: "Goat Man", body: "I am the goat" },
     ];
-    setCards(returnQuoteCards(quotes));
+    setCards(turnQuotesIntoCards(quotes));
   }, []);
 
   return (
     <div className="main-screen">
-      <div className={"cards"}>{cards}</div>;
+      <div className={"cards"} data-testid={"cards-section"}>
+        {cards}
+      </div>
+      ;
     </div>
   );
 }
