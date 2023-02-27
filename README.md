@@ -1,7 +1,7 @@
 #  Quote App | Code Refresher App
 
 Quick Quote App using a free quote api. Practicing my TypeScript, End to end/Unit testing, hooks(Mocha Chai, React Testing Library), and Array Functions. Note to self: This is potentially a good candiate to share with others trying to learn these concepts from a basic example.
-Libraries: Axios, react-testing-library, jest, mocha/chai
+Libraries: Axios, react-testing-library, jest, mocha/chai, redux/thunk, React Toolkit
 
 Instructions:
 1. Fork and clone this project so you can connect it to your local enviornment
